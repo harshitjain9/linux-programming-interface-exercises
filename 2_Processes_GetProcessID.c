@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <unistd.h>
+#include <unistd.h> //provides access to POSIX operating system api
 
 int main() {
     int proc_id, par_proc_id;
