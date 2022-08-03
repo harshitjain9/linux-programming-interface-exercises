@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <sys/statvfs.h>
+#include <sys/statvfs.h> // to be able to use statvfs function
 
 // statvfs uses pathname to speecify name of any file in the file system
 // fstatvfs uses open file descriptor referring to any file in the file system
