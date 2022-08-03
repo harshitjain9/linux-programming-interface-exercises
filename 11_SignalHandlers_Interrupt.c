@@ -6,7 +6,7 @@
 void sighandler(int);
 
 int main() {
-    signal(SIGINT, sighandler);
+    signal(SIGINT, sighandler); // whenever you press Ctrl+C (or interrupt the program), the function sighandler will be executed
     for (;;) {
         printf("Sleeping...\n");
         sleep(3);
