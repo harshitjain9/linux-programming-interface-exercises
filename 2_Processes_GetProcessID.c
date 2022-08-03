@@ -7,5 +7,5 @@ int main() {
     par_proc_id = getppid();
 
     printf("PROCESS ID: %d\n", proc_id);
-    printf("PARENR PROCESS ID: %d\n", par_proc_id);
+    printf("PARENT PROCESS ID: %d\n", par_proc_id);
 }
