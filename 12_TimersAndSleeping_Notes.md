@@ -1,0 +1,3 @@
+- A process can use setitimer() or alarm() to set a timer so that it receives a signal after the passage of specified amount of real or processed time
+- One use of timer is to set the upper limit on the time for which a system call can be blocked
+- Applications which need to suspend execution for a specified interval of realtime can use a variety of sleep functions for this purpose
