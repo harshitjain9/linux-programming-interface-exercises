@@ -3,6 +3,7 @@
 #include <stdlib.h> //standard library
 #include <sys/utsname.h>
 
+// /proc/<PID>/status file has fields like name, pid, ppid, uid, gid, groups etc
 int main() {
     struct utsname buff;
 

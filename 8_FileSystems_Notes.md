@@ -1,0 +1,13 @@
+- devices are represented by entries in the /dev directory
+- each device has a corresponding device driver which implements a standard set of operations including those corresponding to create, open, close, read/write
+- a device may be real (there is a corresponding hardware device) or virtual (implements an API that is same as real device)
+- a hard disk is divided into one or more partitions, each of which may contain a file system
+- a file system is an organized collection of regular files and directories
+- linux implements a wide variety of file systems, including the traditional Ext2 file system
+- Ext2 file system is conceptually similar to early UNIX file systems consisting of bootblock, superblock, inode table and data area containing file data blocks
+- each file has an entry in the file system's inode table
+- this entry contains various info regarding the file, including its type, size, ownership, permissions, timestamps, pointers to the file's data block 
+- all the file systems on a linux system are mounted under a single directory tree with the directory / at its root
+- the location at which a file is mounted in the file's directory tree is called its mount point 
+- a privileged process can mount and unmount system calls
+- info about a mounted file system can be obtained using statvfs

@@ -1,0 +1,7 @@
+- Each user has a unique login name and an associate unique numeric user id.
+- A user can belong to one or more groups, each of which has a unique name and an asssociated unique numeric identifier.
+- The primary purpose of these identifiers is to establish ownership for various system resources, eg. files, directories etc
+- **/etc/passwd** contains user's name and id
+- **/etc/group** contains user's group membership
+- **/etc/shadow** can only be read by privileged processes and is used to separate sensistive password info with publicly available user info in /etc/passwd
+- various library functions are provided in order to retrieve info from each of these files
