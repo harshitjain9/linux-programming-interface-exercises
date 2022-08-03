@@ -1,1 +1,1 @@
-- Linux-specific inotify .
+- Linux-specific inotify
