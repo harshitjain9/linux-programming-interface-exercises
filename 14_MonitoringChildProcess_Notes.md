@@ -1,0 +1,8 @@
+- Using wait() and waitpid(), a parent process can obtain the status of its terminated or stopped children
+- The status of terminated children would tell whether the child process terminated normally with an exit status indicating sucess or failure, or it has terminated abnormally, was stopped by a signal or was resumed by a SIGCUNT signal
+- If a child's parent terminates, the child becomes an orphan and is adopted by the init process whose process id is always 1. 
+- When a child process terminates, it becomes a zombie; it is removed from the system ONLY WHEN its parent calls wait()/similar function to retrieve the child's status
+- Long running programs such as shells and daemons should be designed such that they always reap the status of the child process they create. 
+- Zombie state can't be killed and unreaped zombie will eventually clog the kernel process table. 
+- A common process for dealing with dead child processes/ zombies is to set a handler for the SIGCHILD. This signal is sent to the parent process whenever a child process terminates, and optionally when a child is stopped by the signal. 
+- wait() function blocks the calling process unless one of its child processes exits or a signal is received.
