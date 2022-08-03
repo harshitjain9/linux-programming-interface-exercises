@@ -1,1 +1,1 @@
-- Linux-specific inotify
+- Linux-specific inotify mechanism allows an application to obtain notifications when files are opened, closed, created, deleted, modified, renamed etc.
