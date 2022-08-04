@@ -1,0 +1,6 @@
+- Pipes were the first method of IPC- Inter Process Communication- under UNIX. 
+- Used frequently by the shell and other applications. 
+- Unidirectional limited capacity bytestream which can be used for communication between related processes. 
+- Other than for IPC, pipes can also be used for process synchronization. 
+- popen() and pclose() are the two functions that allow a process to transfer data to or from the standard shell command without having to know the details of creating a pipe, accessing a shell and closing unused file descriptors. 
+- popen() initiates the pipe stream from or to a process and pclose() that pipe stream. 
