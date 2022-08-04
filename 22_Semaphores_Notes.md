@@ -1,0 +1,6 @@
+- Semaphores allow processes to synchronize their actions. 
+- Useful when a process must get exclusive access to some shared resource, such as region of shared memory. 
+- Created and operated upon a set containing one or more semaphores. 
+- Each semaphore within a set is always an integer whose value is >=0
+- semop()- a system call which allows the caller to add an integer to a semaphore. also allows the user to subtract integer from semaphore or even wait for a semaphore to be equal to 0. The last 2 operations can cause the caller to be blocked
+- Whenever any set of peer processes might try to access or update semaphores, special care must be given to prevent a race condition
