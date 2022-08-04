@@ -1,0 +1,11 @@
+- A message queue is a linked list of messages stored within the kernel and identified by a message queue identifier. 
+- A new queue is created, or an already-created queue is opened, using **msgget()**
+- New messages are added to the queue using **msgsnd()**
+- Every message has a positive long integer type field, a nonnegative length, and actual data bytes which are passed when using msgsnd()
+- Messages are fetched from a queue using **msgrcv()**
+- All processes can exchange information through access to a common system message queue
+- The sending process places a message to a queue which can be read by another process
+- Each message is given an identifier so that process can select the appropriate message
+- Process must share a common key in order to gain access to the queue in the first place
+- **ftok()** - used to generate a unique key
+- **msgctl()**- performs various operations on a queue, usually used to delete a queue
