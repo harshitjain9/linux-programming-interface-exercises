@@ -1,0 +1,7 @@
+- File locking allows processes to synchronize access to a file. 
+- Linux provides two file locking system calls- flock() & fcntl().
+- flock() system call locks an entire file- two types of locks- shared locks and exclusive locks
+- fcntl() places locks on any region of a file, ranging from a single byte to the entire file. two types of locks may be placed inside fcntl- read lock and write lock
+- If a blocking lock request would bring about a deadlock situation, then the kernel causes fcntl() to fail
+- Locks placed by flock and fcntl have different semantics when it comes to inheritance
+- Linux specific proc/locks file displays the file locks currently held by all the process on the system
