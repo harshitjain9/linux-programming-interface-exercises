@@ -1,0 +1,11 @@
+- On early UNIX systems, terminals were real hardware devices connected to a computer via serial lines. 
+- Early terminals were not standardized, meaning that different escape sequences were required to program the terminals produced by different vendors. 
+- On modern workstations, such terminals have been superseded by bitmapped monitors running the X Window system. 
+- However, the ability to program terminals is still required when dealing with virtual devices such as virtual consoles and terminal emulators, and real devices connected via serial lines. 
+- Terminal settings are maintained in a structure of type termios, which contains 4 bitmasked fields that control various terminal settings and an array that defines the various special characters interpreted by the terminal driver. 
+- A range of functions perform various terminal operations; these include changing the terminal line speed and performing line control operations etc. 
+- **stty -a" allows us to view all the terminal attributes. 
+- A pseudoterminal pair consists of a connected master device and a slave device. 
+- Together these 2 devices provide a bidirectional IPC channel 
+- Pseudoterminal slave behaves just like a conventional terminal; all of the operations which can be applied to a conventional terminal can be applied to the slave. Input transmitted from the master to the slave is interpreted in the same manner as keyboard input is interpreted on a conventional terminal.  
+- One common use of pseudoterminals is in application which provides network login services. 
