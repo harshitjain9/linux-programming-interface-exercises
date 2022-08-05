@@ -1,0 +1,6 @@
+- Sockets allow communication between applications on same host or on different hosts connected via a network.
+- A typical stream socket server creates its socket using socket() method and then binds the socket to a well-known address using bind(). 
+- Each client connection is then accepted on the listening socket using the accept() method which returns a file desciptor for the new socket which is connected to the client socket. 
+- A typical stream socket client creates a socket using socket() method and then establishes a connection by calling connect(). connect() method specifies the server's well known address. 
+- After two stream sockets are connected, data can be transferred in either direction using read() function and write() function. 
+- A typical datagram server creates a socket using socket() function and then binds it to a well known address using bind(). Because datagram sockets are connectionless, the server's socket can be used to receive datagrams from any client. 
